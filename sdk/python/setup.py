@@ -84,13 +84,12 @@ setuptools.setup(
         'notebooks': notebooks,
     },
     packages=setuptools.find_packages(exclude=['*test*']),
-    classifiers=[
+        classifiers=[
         'Intended Audience :: Developers',
         'Intended Audience :: Education',
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: Apache Software License',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
@@ -101,7 +100,7 @@ setuptools.setup(
         'Topic :: Software Development :: Libraries',
         'Topic :: Software Development :: Libraries :: Python Modules',
     ],
-    python_requires='>=3.9, <3.13',
+    python_requires='>=3.10, <3.13',
     include_package_data=True,
     entry_points={
         'console_scripts': [
